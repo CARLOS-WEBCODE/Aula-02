@@ -1,5 +1,6 @@
 ﻿using ProjetoAula02a.Entities;
 using ProjetoAula02a.Inputs;
+using ProjetoAula02a.Repositories;
 using System;
 using System.Collections.Generic;
 
@@ -43,6 +44,18 @@ namespace ProjetoAula02a
                 {
                     Console.WriteLine($"\nErro: {e.Message}");
                 }
+            }
+
+            try
+            {
+                var empresaRepository = new EmpresaRepository();
+                empresaRepository.ExportarDados(empresa);
+
+                Console.WriteLine("\nDADOS GRAVADOS COM SUCESSO!");
+            }
+            catch(Exception e )
+            {
+                Console.WriteLine($"\nErro ao exportar dados: {e.Message}");
             }
 
 
