@@ -10,7 +10,7 @@ namespace ProjetoAula02a
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n*** EXPORTADOR DE DADOS DE EMPRESA ***\n");
+            Console.WriteLine("\n*** EXPORTADOR DE DADOS DA EMPRESA ***\n");
             Console.WriteLine("\nEntre com os dados da empresa:\n");
 
             var empresa = new Empresa();
